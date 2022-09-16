@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+
+.container {
+    background-image:url(./Asstes/back.jpg);
+    background-repeat: no-repeat;
+    background-image: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    /* padding: 20px 50px; */
+}
+
+.container::before {
+    content: ' ';
+    position: absolute;
+    background-color: rgba( 0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.container .top .back{
+    height: 100%;
+    width: 100%;
+}
+
+.container .top .logo img{
+    position: relative;
+    height: 10%;
+    width: 10%;
+    margin: 3%;
+    font-weight: bolder;
+}
+
+.container .loginbody {
+    padding: 60px;
+    margin-left: 50%;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 630px;
+    background-color: rgba( 0, 0, 0, .75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);  
+}
+
+.container .loginbody .loginbox h2{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+.container .loginbody .loginbox input{
+    height: 50px; 
+    width: 100%;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.container .loginbody .loginbox .inputwrap{
+    margin-bottom: 25px;
+}
+
+.container .loginbody .loginbox button{
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: red;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid red;
+}
+
+.container .loginbody .loginbox .support {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    font-size: 12px; 
+    margin-bottom: 5%;
+}
+
+.container .loginbody .loginbox .support input {
+    width: 15px;
+    height: 14px;
+}
+.container.loginbody .loginbox .remember {
+    display: flex;
+    align-items: center;
+}
+
+.container.loginbody .loginbox .remember span {
+    margin-right: 10px;
+    height: 25px;
+}
+
+/* .container.loginbody .loginbox .support .help {
+    margin-left: 10px;
+} */
+
+.facebook {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #737373;
+    margin-bottom: 5%;
+}
+
+.facebook img {
+    width: 30px;
+    height: 30px;
+}
+
+.facebook span{
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.facebook span a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.signup {
+    color: #737373;
+    font-size: 16px;
+}
+
+.signup a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
+
+
+
